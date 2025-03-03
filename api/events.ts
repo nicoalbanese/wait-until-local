@@ -6,7 +6,7 @@ export const GET = async () => {
       console.log("waiting...");
       await new Promise((resolve) => setTimeout(resolve, 11000));
       console.log("done");
-    })()
+    })(),
   );
   return new Response("Hello World!");
 };
